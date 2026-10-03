@@ -1,0 +1,25 @@
+{
+  "name": "ecc-vue",
+  "version": "2.2.3",
+  "description": "ECC Vue: Vue 3 Composition API, Nuxt 4, UI-to-Vue conversion, and Vue review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "nuxt"
+  ],
+  "dependencies": [
+    "ecc-frontend"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ecc-dotnet",
+  "version": "2.2.3",
+  "description": "ECC .NET: C# and F# patterns, testing, and review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "dotnet",
+    "csharp",
+    "fsharp"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

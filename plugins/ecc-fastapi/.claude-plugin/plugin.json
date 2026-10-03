@@ -1,0 +1,26 @@
+{
+  "name": "ecc-fastapi",
+  "version": "2.2.3",
+  "description": "ECC FastAPI: async patterns, Pydantic, OpenAPI, and FastAPI review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "fastapi",
+    "python",
+    "pydantic"
+  ],
+  "dependencies": [
+    "ecc-python"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

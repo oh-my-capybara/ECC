@@ -1,0 +1,21 @@
+{
+  "name": "ecc-ito",
+  "version": "2.2.3",
+  "description": "ECC Ito compute: compute, inference, and training workflows",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "ito",
+    "compute",
+    "inference",
+    "training"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

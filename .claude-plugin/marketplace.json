@@ -42,6 +42,1066 @@
         "best-practices"
       ],
       "strict": false
+    },
+    {
+      "name": "ecc-workflow",
+      "source": "./plugins/ecc-workflow",
+      "description": "ECC core engineering workflow: planning, TDD, verification, code review, refactoring, docs, and agent self-evaluation",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "workflow",
+        "tdd",
+        "code-review",
+        "planning",
+        "verification"
+      ],
+      "category": "workflow",
+      "tags": [
+        "workflow",
+        "tdd",
+        "code-review",
+        "planning",
+        "verification"
+      ]
+    },
+    {
+      "name": "ecc-qa",
+      "source": "./plugins/ecc-qa",
+      "description": "ECC QA and testing: Playwright E2E, browser QA, click-path audits, desktop E2E, and AI regression testing",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "testing",
+        "e2e",
+        "playwright",
+        "qa"
+      ],
+      "category": "testing",
+      "tags": [
+        "testing",
+        "e2e",
+        "playwright",
+        "qa"
+      ]
+    },
+    {
+      "name": "ecc-frontend",
+      "source": "./plugins/ecc-frontend",
+      "description": "ECC frontend foundations: UI patterns, design systems, accessibility, motion, i18n, Angular, and Vite",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "frontend",
+        "ui",
+        "accessibility",
+        "design-system",
+        "motion"
+      ],
+      "category": "development",
+      "tags": [
+        "frontend",
+        "ui",
+        "accessibility",
+        "design-system",
+        "motion"
+      ]
+    },
+    {
+      "name": "ecc-typescript",
+      "source": "./plugins/ecc-typescript",
+      "description": "ECC TypeScript/JavaScript: TypeScript code review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "typescript",
+        "javascript"
+      ],
+      "category": "development",
+      "tags": [
+        "typescript",
+        "javascript"
+      ]
+    },
+    {
+      "name": "ecc-nestjs",
+      "source": "./plugins/ecc-nestjs",
+      "description": "ECC NestJS: patterns for modules, controllers, providers, and testing",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "nestjs",
+        "nodejs",
+        "typescript"
+      ],
+      "category": "development",
+      "tags": [
+        "nestjs",
+        "nodejs",
+        "typescript"
+      ]
+    },
+    {
+      "name": "ecc-nodejs",
+      "source": "./plugins/ecc-nodejs",
+      "description": "ECC Node.js: runtime tooling including Bun",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "nodejs",
+        "bun",
+        "javascript"
+      ],
+      "category": "development",
+      "tags": [
+        "nodejs",
+        "bun",
+        "javascript"
+      ]
+    },
+    {
+      "name": "ecc-react",
+      "source": "./plugins/ecc-react",
+      "description": "ECC React: React, Next.js, and React Native patterns, performance, testing, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "react",
+        "nextjs",
+        "react-native"
+      ],
+      "category": "development",
+      "tags": [
+        "react",
+        "nextjs",
+        "react-native"
+      ]
+    },
+    {
+      "name": "ecc-vue",
+      "source": "./plugins/ecc-vue",
+      "description": "ECC Vue: Vue 3 Composition API, Nuxt 4, UI-to-Vue conversion, and Vue review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "vue",
+        "nuxt"
+      ],
+      "category": "development",
+      "tags": [
+        "vue",
+        "nuxt"
+      ]
+    },
+    {
+      "name": "ecc-backend",
+      "source": "./plugins/ecc-backend",
+      "description": "ECC backend architecture: REST API design, backend patterns, contract-first, hexagonal architecture, and MCP servers",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "backend",
+        "api",
+        "architecture",
+        "mcp"
+      ],
+      "category": "development",
+      "tags": [
+        "backend",
+        "api",
+        "architecture",
+        "mcp"
+      ]
+    },
+    {
+      "name": "ecc-database",
+      "source": "./plugins/ecc-database",
+      "description": "ECC databases: PostgreSQL, MySQL, ClickHouse, Redis, Prisma, migrations, and database review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "database",
+        "postgres",
+        "mysql",
+        "redis",
+        "prisma"
+      ],
+      "category": "development",
+      "tags": [
+        "database",
+        "postgres",
+        "mysql",
+        "redis",
+        "prisma"
+      ]
+    },
+    {
+      "name": "ecc-python",
+      "source": "./plugins/ecc-python",
+      "description": "ECC Python: idiomatic patterns, pytest testing, installers, and Python review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "python",
+        "pytest"
+      ],
+      "category": "development",
+      "tags": [
+        "python",
+        "pytest"
+      ]
+    },
+    {
+      "name": "ecc-django",
+      "source": "./plugins/ecc-django",
+      "description": "ECC Django: patterns, TDD, verification, Celery, security, review, and build/migration fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "django",
+        "python",
+        "celery"
+      ],
+      "category": "development",
+      "tags": [
+        "django",
+        "python",
+        "celery"
+      ]
+    },
+    {
+      "name": "ecc-fastapi",
+      "source": "./plugins/ecc-fastapi",
+      "description": "ECC FastAPI: async patterns, Pydantic, OpenAPI, and FastAPI review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "fastapi",
+        "python",
+        "pydantic"
+      ],
+      "category": "development",
+      "tags": [
+        "fastapi",
+        "python",
+        "pydantic"
+      ]
+    },
+    {
+      "name": "ecc-golang",
+      "source": "./plugins/ecc-golang",
+      "description": "ECC Go: idiomatic patterns, testing, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "go",
+        "golang"
+      ],
+      "category": "development",
+      "tags": [
+        "go",
+        "golang"
+      ]
+    },
+    {
+      "name": "ecc-rust",
+      "source": "./plugins/ecc-rust",
+      "description": "ECC Rust: idiomatic patterns, testing, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "rust",
+        "cargo"
+      ],
+      "category": "development",
+      "tags": [
+        "rust",
+        "cargo"
+      ]
+    },
+    {
+      "name": "ecc-cpp",
+      "source": "./plugins/ecc-cpp",
+      "description": "ECC C/C++: coding standards, testing, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "cpp",
+        "c",
+        "cmake"
+      ],
+      "category": "development",
+      "tags": [
+        "cpp",
+        "c",
+        "cmake"
+      ]
+    },
+    {
+      "name": "ecc-java",
+      "source": "./plugins/ecc-java",
+      "description": "ECC Java: coding standards, Spring Boot, Quarkus, JPA, tinystruct, review, and Maven/Gradle build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "java",
+        "spring-boot",
+        "quarkus",
+        "jpa",
+        "gradle"
+      ],
+      "category": "development",
+      "tags": [
+        "java",
+        "spring-boot",
+        "quarkus",
+        "jpa",
+        "gradle"
+      ]
+    },
+    {
+      "name": "ecc-kotlin",
+      "source": "./plugins/ecc-kotlin",
+      "description": "ECC Kotlin: coroutines, Ktor, Exposed, Android clean architecture, Compose Multiplatform, testing, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "kotlin",
+        "android",
+        "ktor",
+        "compose"
+      ],
+      "category": "development",
+      "tags": [
+        "kotlin",
+        "android",
+        "ktor",
+        "compose"
+      ]
+    },
+    {
+      "name": "ecc-dotnet",
+      "source": "./plugins/ecc-dotnet",
+      "description": "ECC .NET: C# and F# patterns, testing, and review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "dotnet",
+        "csharp",
+        "fsharp"
+      ],
+      "category": "development",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "fsharp"
+      ]
+    },
+    {
+      "name": "ecc-laravel",
+      "source": "./plugins/ecc-laravel",
+      "description": "ECC Laravel: patterns, TDD, verification, security, and plugin discovery",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "php",
+        "laravel"
+      ],
+      "category": "development",
+      "tags": [
+        "php",
+        "laravel"
+      ]
+    },
+    {
+      "name": "ecc-php",
+      "source": "./plugins/ecc-php",
+      "description": "ECC PHP: PSR-12, Eloquent, and security code review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "php"
+      ],
+      "category": "development",
+      "tags": [
+        "php"
+      ]
+    },
+    {
+      "name": "ecc-rails",
+      "source": "./plugins/ecc-rails",
+      "description": "ECC Ruby on Rails patterns",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "ruby",
+        "rails"
+      ],
+      "category": "development",
+      "tags": [
+        "ruby",
+        "rails"
+      ]
+    },
+    {
+      "name": "ecc-perl",
+      "source": "./plugins/ecc-perl",
+      "description": "ECC Perl: modern Perl patterns, testing, and security",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "perl"
+      ],
+      "category": "development",
+      "tags": [
+        "perl"
+      ]
+    },
+    {
+      "name": "ecc-flutter",
+      "source": "./plugins/ecc-flutter",
+      "description": "ECC Flutter/Dart: patterns, code review, and build/pub dependency fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "flutter",
+        "dart",
+        "mobile"
+      ],
+      "category": "development",
+      "tags": [
+        "flutter",
+        "dart",
+        "mobile"
+      ]
+    },
+    {
+      "name": "ecc-swift",
+      "source": "./plugins/ecc-swift",
+      "description": "ECC Swift/Apple: SwiftUI, Swift 6.2 concurrency, actors, on-device Foundation Models, Liquid Glass, review, and build fixes",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "swift",
+        "ios",
+        "swiftui",
+        "apple"
+      ],
+      "category": "development",
+      "tags": [
+        "swift",
+        "ios",
+        "swiftui",
+        "apple"
+      ]
+    },
+    {
+      "name": "ecc-harmonyos",
+      "source": "./plugins/ecc-harmonyos",
+      "description": "ECC HarmonyOS/OpenHarmony: ArkTS and ArkUI code and API review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "harmonyos",
+        "openharmony",
+        "arkts"
+      ],
+      "category": "development",
+      "tags": [
+        "harmonyos",
+        "openharmony",
+        "arkts"
+      ]
+    },
+    {
+      "name": "ecc-security",
+      "source": "./plugins/ecc-security",
+      "description": "ECC security: security review and scanning, bug bounty hunting, GateGuard, and safety guards",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "security",
+        "owasp",
+        "scanning"
+      ],
+      "category": "security",
+      "tags": [
+        "security",
+        "owasp",
+        "scanning"
+      ]
+    },
+    {
+      "name": "ecc-healthcare",
+      "source": "./plugins/ecc-healthcare",
+      "description": "ECC healthcare: PHI/HIPAA compliance, CDSS and EMR patterns, clinical eval harness, and healthcare review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "healthcare",
+        "hipaa",
+        "phi",
+        "emr"
+      ],
+      "category": "domain",
+      "tags": [
+        "healthcare",
+        "hipaa",
+        "phi",
+        "emr"
+      ]
+    },
+    {
+      "name": "ecc-web3",
+      "source": "./plugins/ecc-web3",
+      "description": "ECC Web3: DeFi/EVM security, token decimals, keccak256, x402 payments, trading-agent security, and prediction markets",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "web3",
+        "defi",
+        "evm",
+        "prediction-markets"
+      ],
+      "category": "domain",
+      "tags": [
+        "web3",
+        "defi",
+        "evm",
+        "prediction-markets"
+      ]
+    },
+    {
+      "name": "ecc-ito",
+      "source": "./plugins/ecc-ito",
+      "description": "ECC Ito compute: compute, inference, and training workflows",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "ito",
+        "compute",
+        "inference",
+        "training"
+      ],
+      "category": "domain",
+      "tags": [
+        "ito",
+        "compute",
+        "inference",
+        "training"
+      ]
+    },
+    {
+      "name": "ecc-research",
+      "source": "./plugins/ecc-research",
+      "description": "ECC research: deep research, Exa search, docs lookup, PubMed/USPTO databases, and literature review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "search",
+        "documentation"
+      ],
+      "category": "productivity",
+      "tags": [
+        "research",
+        "search",
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecc-marketing",
+      "source": "./plugins/ecc-marketing",
+      "description": "ECC marketing and content: articles, brand voice, content engine, SEO, competitive analysis, campaigns, and social distribution",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "marketing",
+        "content",
+        "seo",
+        "social"
+      ],
+      "category": "productivity",
+      "tags": [
+        "marketing",
+        "content",
+        "seo",
+        "social"
+      ]
+    },
+    {
+      "name": "ecc-business",
+      "source": "./plugins/ecc-business",
+      "description": "ECC business: investor materials and outreach, lead intelligence, product capability, operator desk patterns, and document processing",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "business",
+        "investors",
+        "product",
+        "documents"
+      ],
+      "category": "productivity",
+      "tags": [
+        "business",
+        "investors",
+        "product",
+        "documents"
+      ]
+    },
+    {
+      "name": "ecc-operator",
+      "source": "./plugins/ecc-operator",
+      "description": "ECC operator workflows: GitHub, Jira, email, messaging, billing, Google Workspace, dashboards, and cost tracking",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "operations",
+        "github",
+        "jira",
+        "email",
+        "billing"
+      ],
+      "category": "productivity",
+      "tags": [
+        "operations",
+        "github",
+        "jira",
+        "email",
+        "billing"
+      ]
+    },
+    {
+      "name": "ecc-media",
+      "source": "./plugins/ecc-media",
+      "description": "ECC media generation: fal.ai, Remotion, Manim, video editing, VideoDB, Blender, UI demos, and taste pipelines",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "media",
+        "video",
+        "image",
+        "remotion"
+      ],
+      "category": "productivity",
+      "tags": [
+        "media",
+        "video",
+        "image",
+        "remotion"
+      ]
+    },
+    {
+      "name": "ecc-agentic",
+      "source": "./plugins/ecc-agentic",
+      "description": "ECC agentic engineering: harness construction, autonomous loops, GAN-style harness, prompt optimization, and agent ops",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "agents",
+        "agentic",
+        "autonomous-loops",
+        "harness"
+      ],
+      "category": "workflow",
+      "tags": [
+        "agents",
+        "agentic",
+        "autonomous-loops",
+        "harness"
+      ]
+    },
+    {
+      "name": "ecc-orchestration",
+      "source": "./plugins/ecc-orchestration",
+      "description": "ECC orchestration: orch-* feature pipelines, plan orchestration, dmux workflows, and multi-model commands",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "orchestration",
+        "multi-agent",
+        "pipeline"
+      ],
+      "category": "workflow",
+      "tags": [
+        "orchestration",
+        "multi-agent",
+        "pipeline"
+      ]
+    },
+    {
+      "name": "ecc-opensource",
+      "source": "./plugins/ecc-opensource",
+      "description": "ECC open-source release pipeline: fork, sanitize, and package projects for public release",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "open-source",
+        "release",
+        "sanitize"
+      ],
+      "category": "workflow",
+      "tags": [
+        "open-source",
+        "release",
+        "sanitize"
+      ]
+    },
+    {
+      "name": "ecc-devops",
+      "source": "./plugins/ecc-devops",
+      "description": "ECC DevOps: deployment, Docker, Kubernetes, canary watch, Flox, uncloud, and PM2",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "devops",
+        "docker",
+        "kubernetes",
+        "deployment"
+      ],
+      "category": "development",
+      "tags": [
+        "devops",
+        "docker",
+        "kubernetes",
+        "deployment"
+      ]
+    },
+    {
+      "name": "ecc-network",
+      "source": "./plugins/ecc-network",
+      "description": "ECC networking: enterprise and homelab network design, Cisco IOS, BGP, VLANs, WireGuard, Pi-hole, and config review",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "network",
+        "homelab",
+        "cisco",
+        "bgp"
+      ],
+      "category": "development",
+      "tags": [
+        "network",
+        "homelab",
+        "cisco",
+        "bgp"
+      ]
+    },
+    {
+      "name": "ecc-ml",
+      "source": "./plugins/ecc-ml",
+      "description": "ECC machine learning: production MLE workflow, PyTorch, recommender systems, RAG review, and ML adoption",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "machine-learning",
+        "pytorch",
+        "mle",
+        "rag"
+      ],
+      "category": "development",
+      "tags": [
+        "machine-learning",
+        "pytorch",
+        "mle",
+        "rag"
+      ]
+    },
+    {
+      "name": "ecc-performance",
+      "source": "./plugins/ecc-performance",
+      "description": "ECC performance: benchmarking, throughput and latency optimization, parallel execution, and agent evals",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "performance",
+        "benchmark",
+        "latency",
+        "optimization"
+      ],
+      "category": "development",
+      "tags": [
+        "performance",
+        "benchmark",
+        "latency",
+        "optimization"
+      ]
+    },
+    {
+      "name": "ecc-supply-chain",
+      "source": "./plugins/ecc-supply-chain",
+      "description": "ECC supply chain: logistics, customs, procurement, inventory planning, production scheduling, and returns",
+      "version": "2.2.3",
+      "author": {
+        "name": "Affaan Mustafa",
+        "url": "https://x.com/affaanmustafa"
+      },
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT",
+      "keywords": [
+        "supply-chain",
+        "logistics",
+        "procurement"
+      ],
+      "category": "domain",
+      "tags": [
+        "supply-chain",
+        "logistics",
+        "procurement"
+      ]
     }
   ]
 }

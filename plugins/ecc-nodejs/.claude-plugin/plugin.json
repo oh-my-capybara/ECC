@@ -1,0 +1,20 @@
+﻿{
+    "name":  "ecc-nodejs",
+    "version":  "2.2.3",
+    "description":  "ECC Node.js: runtime tooling including Bun",
+    "author":  {
+                   "name":  "Affaan Mustafa",
+                   "url":  "https://x.com/affaanmustafa"
+               },
+    "homepage":  "https://ecc.tools",
+    "repository":  "https://github.com/affaan-m/ECC",
+    "license":  "MIT",
+    "keywords":  [
+                     "nodejs",
+                     "bun",
+                     "javascript"
+                 ],
+    "skills":  [
+                   "./skills/"
+               ]
+}
