@@ -1,0 +1,23 @@
+{
+  "name": "ecc-cpp",
+  "version": "2.2.3",
+  "description": "ECC C/C++: coding standards, testing, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "cpp",
+    "c",
+    "cmake"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

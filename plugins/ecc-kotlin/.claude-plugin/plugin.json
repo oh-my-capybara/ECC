@@ -1,0 +1,24 @@
+{
+  "name": "ecc-kotlin",
+  "version": "2.2.3",
+  "description": "ECC Kotlin: coroutines, Ktor, Exposed, Android clean architecture, Compose Multiplatform, testing, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "kotlin",
+    "android",
+    "ktor",
+    "compose"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

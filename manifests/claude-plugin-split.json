@@ -1,0 +1,485 @@
+{
+  "$comment": "Claude Code plugin split for ECC. Run: node scripts/split-claude-plugins.js [--dry-run|--restore]. Components not listed here stay in the root `ecc` plugin. `core` pins components that hooks/scripts reference by path and therefore must stay at the repo root.",
+  "corePlugin": "ecc",
+  "pluginsDir": "plugins",
+  "rewriteRefsIn": ["agents", "commands", "skills", "rules", "AGENTS.md", "CLAUDE.md"],
+  "core": {
+    "skills": ["configure-ecc", "continuous-learning", "continuous-learning-v2", "plan-canvas", "ecc-guide", "ecc-recipes", "hermes-imports"],
+    "agents": ["harness-optimizer"],
+    "commands": [
+      "auto-update", "checkpoint", "cost-report", "ecc-guide",
+      "epic-claim", "epic-decompose", "epic-publish", "epic-review", "epic-sync", "epic-unblock", "epic-validate",
+      "evolve", "harness-audit", "instinct-export", "instinct-import", "instinct-status", "learn", "learn-eval",
+      "model-route", "multi-workflow", "plan-canvas", "project-init", "projects", "promote", "prune", "quality-gate",
+      "resume-session", "save-session", "sessions", "setup-pm", "skill-create", "skill-health"
+    ]
+  },
+  "plugins": [
+    {
+      "name": "ecc-workflow",
+      "description": "ECC core engineering workflow: planning, TDD, verification, code review, refactoring, docs, and agent self-evaluation",
+      "keywords": ["workflow", "tdd", "code-review", "planning", "verification"],
+      "category": "workflow",
+      "skills": [
+        "tdd-workflow", "verification-loop", "eval-harness", "strategic-compact", "error-handling", "coding-standards",
+        "git-workflow", "delivery-gate", "production-audit", "santa-method", "plankton-code-quality",
+        "intent-driven-development", "loop-design-check", "context-budget", "iterative-retrieval", "unified-memory",
+        "council", "council-multi-model", "dev-team", "product-lens", "growth-log", "ck", "architecture-decision-records",
+        "living-docs-governance", "codebase-onboarding", "code-tour", "repo-scan", "inherit-legacy-style",
+        "codehealth-mcp", "config-gc", "rules-distill", "agent-sort", "agent-introspection-debugging",
+        "agent-self-evaluation", "skill-comply", "skill-scout", "skill-stocktake", "hookify-rules"
+      ],
+      "agents": [
+        "planner", "architect", "tdd-guide", "code-reviewer", "build-error-resolver", "refactor-cleaner", "doc-updater",
+        "code-architect", "code-explorer", "code-simplifier", "comment-analyzer", "silent-failure-hunter",
+        "type-design-analyzer", "spec-miner", "agent-evaluator", "conversation-analyzer", "loop-operator"
+      ],
+      "commands": [
+        "plan", "plan-prd", "code-review", "build-fix", "refactor-clean", "update-docs", "update-codemaps", "feature-dev",
+        "review-pr", "pr", "prp-commit", "prp-implement", "prp-plan", "prp-pr", "prp-prd", "santa-loop", "aside",
+        "hookify", "hookify-configure", "hookify-help", "hookify-list", "loop-start", "loop-status"
+      ]
+    },
+    {
+      "name": "ecc-qa",
+      "description": "ECC QA and testing: Playwright E2E, browser QA, click-path audits, desktop E2E, and AI regression testing",
+      "keywords": ["testing", "e2e", "playwright", "qa"],
+      "category": "testing",
+      "skills": ["e2e-testing", "browser-qa", "click-path-audit", "windows-desktop-e2e", "ai-regression-testing"],
+      "agents": ["e2e-runner", "pr-test-analyzer"],
+      "commands": ["test-coverage"]
+    },
+    {
+      "name": "ecc-frontend",
+      "description": "ECC frontend foundations: UI patterns, design systems, accessibility, motion, i18n, Angular, and Vite",
+      "keywords": ["frontend", "ui", "accessibility", "design-system", "motion"],
+      "category": "development",
+      "skills": [
+        "frontend-patterns", "frontend-design-direction", "frontend-slides", "make-interfaces-feel-better",
+        "design-system", "accessibility", "frontend-a11y", "motion-advanced", "motion-foundations", "motion-patterns",
+        "i18n-sync", "angular-developer", "vite-patterns"
+      ],
+      "agents": ["a11y-architect"],
+      "commands": []
+    },
+    {
+      "name": "ecc-typescript",
+      "description": "ECC TypeScript/JavaScript: TypeScript code review",
+      "keywords": ["typescript", "javascript"],
+      "category": "development",
+      "skills": [],
+      "agents": ["typescript-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-nestjs",
+      "description": "ECC NestJS: patterns for modules, controllers, providers, and testing",
+      "keywords": ["nestjs", "nodejs", "typescript"],
+      "category": "development",
+      "skills": ["nestjs-patterns"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-nodejs",
+      "description": "ECC Node.js: runtime tooling including Bun",
+      "keywords": ["nodejs", "bun", "javascript"],
+      "category": "development",
+      "skills": ["bun-runtime"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-react",
+      "description": "ECC React: React, Next.js, and React Native patterns, performance, testing, review, and build fixes",
+      "keywords": ["react", "nextjs", "react-native"],
+      "category": "development",
+      "dependencies": ["ecc-frontend"],
+      "skills": ["react-patterns", "react-performance", "react-testing", "nextjs-turbopack", "react-native-patterns"],
+      "agents": ["react-reviewer", "react-build-resolver"],
+      "commands": ["react-build", "react-review", "react-test"]
+    },
+    {
+      "name": "ecc-vue",
+      "description": "ECC Vue: Vue 3 Composition API, Nuxt 4, UI-to-Vue conversion, and Vue review",
+      "keywords": ["vue", "nuxt"],
+      "category": "development",
+      "dependencies": ["ecc-frontend"],
+      "skills": ["vue-patterns", "nuxt4-patterns", "ui-to-vue"],
+      "agents": ["vue-reviewer"],
+      "commands": ["vue-review"]
+    },
+    {
+      "name": "ecc-backend",
+      "description": "ECC backend architecture: REST API design, backend patterns, contract-first, hexagonal architecture, and MCP servers",
+      "keywords": ["backend", "api", "architecture", "mcp"],
+      "category": "development",
+      "skills": ["api-design", "backend-patterns", "contract-first", "hexagonal-architecture", "mcp-server-patterns"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-database",
+      "description": "ECC databases: PostgreSQL, MySQL, ClickHouse, Redis, Prisma, migrations, and database review",
+      "keywords": ["database", "postgres", "mysql", "redis", "prisma"],
+      "category": "development",
+      "skills": ["clickhouse-io", "database-migrations", "mysql-patterns", "postgres-patterns", "prisma-patterns", "redis-patterns"],
+      "agents": ["database-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-python",
+      "description": "ECC Python: idiomatic patterns, pytest testing, installers, and Python review",
+      "keywords": ["python", "pytest"],
+      "category": "development",
+      "skills": ["python-patterns", "python-testing", "generating-python-installer"],
+      "agents": ["python-reviewer"],
+      "commands": ["python-review"]
+    },
+    {
+      "name": "ecc-django",
+      "description": "ECC Django: patterns, TDD, verification, Celery, security, review, and build/migration fixes",
+      "keywords": ["django", "python", "celery"],
+      "category": "development",
+      "dependencies": ["ecc-python"],
+      "skills": ["django-patterns", "django-tdd", "django-verification", "django-celery", "django-security"],
+      "agents": ["django-reviewer", "django-build-resolver"],
+      "commands": []
+    },
+    {
+      "name": "ecc-fastapi",
+      "description": "ECC FastAPI: async patterns, Pydantic, OpenAPI, and FastAPI review",
+      "keywords": ["fastapi", "python", "pydantic"],
+      "category": "development",
+      "dependencies": ["ecc-python"],
+      "skills": ["fastapi-patterns"],
+      "agents": ["fastapi-reviewer"],
+      "commands": ["fastapi-review"]
+    },
+    {
+      "name": "ecc-golang",
+      "description": "ECC Go: idiomatic patterns, testing, review, and build fixes",
+      "keywords": ["go", "golang"],
+      "category": "development",
+      "skills": ["golang-patterns", "golang-testing"],
+      "agents": ["go-reviewer", "go-build-resolver"],
+      "commands": ["go-build", "go-review", "go-test"]
+    },
+    {
+      "name": "ecc-rust",
+      "description": "ECC Rust: idiomatic patterns, testing, review, and build fixes",
+      "keywords": ["rust", "cargo"],
+      "category": "development",
+      "skills": ["rust-patterns", "rust-testing"],
+      "agents": ["rust-reviewer", "rust-build-resolver"],
+      "commands": ["rust-build", "rust-review", "rust-test"]
+    },
+    {
+      "name": "ecc-cpp",
+      "description": "ECC C/C++: coding standards, testing, review, and build fixes",
+      "keywords": ["cpp", "c", "cmake"],
+      "category": "development",
+      "skills": ["cpp-coding-standards", "cpp-testing"],
+      "agents": ["cpp-reviewer", "cpp-build-resolver"],
+      "commands": ["cpp-build", "cpp-review", "cpp-test"]
+    },
+    {
+      "name": "ecc-java",
+      "description": "ECC Java: coding standards, Spring Boot, Quarkus, JPA, tinystruct, review, and Maven/Gradle build fixes",
+      "keywords": ["java", "spring-boot", "quarkus", "jpa", "gradle"],
+      "category": "development",
+      "skills": [
+        "java-coding-standards", "springboot-patterns", "springboot-tdd", "springboot-verification", "springboot-security",
+        "quarkus-patterns", "quarkus-tdd", "quarkus-verification", "quarkus-security", "jpa-patterns", "tinystruct-patterns"
+      ],
+      "agents": ["java-reviewer", "java-build-resolver"],
+      "commands": ["gradle-build"]
+    },
+    {
+      "name": "ecc-kotlin",
+      "description": "ECC Kotlin: coroutines, Ktor, Exposed, Android clean architecture, Compose Multiplatform, testing, review, and build fixes",
+      "keywords": ["kotlin", "android", "ktor", "compose"],
+      "category": "development",
+      "skills": [
+        "kotlin-coroutines-flows", "kotlin-exposed-patterns", "kotlin-ktor-patterns", "kotlin-patterns", "kotlin-testing",
+        "android-clean-architecture", "compose-multiplatform-patterns"
+      ],
+      "agents": ["kotlin-reviewer", "kotlin-build-resolver"],
+      "commands": ["kotlin-build", "kotlin-review", "kotlin-test"]
+    },
+    {
+      "name": "ecc-dotnet",
+      "description": "ECC .NET: C# and F# patterns, testing, and review",
+      "keywords": ["dotnet", "csharp", "fsharp"],
+      "category": "development",
+      "skills": ["csharp-testing", "fsharp-testing", "dotnet-patterns"],
+      "agents": ["csharp-reviewer", "fsharp-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-laravel",
+      "description": "ECC Laravel: patterns, TDD, verification, security, and plugin discovery",
+      "keywords": ["php", "laravel"],
+      "category": "development",
+      "skills": ["laravel-plugin-discovery", "laravel-patterns", "laravel-tdd", "laravel-verification", "laravel-security"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-php",
+      "description": "ECC PHP: PSR-12, Eloquent, and security code review",
+      "keywords": ["php"],
+      "category": "development",
+      "skills": [],
+      "agents": ["php-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-rails",
+      "description": "ECC Ruby on Rails patterns",
+      "keywords": ["ruby", "rails"],
+      "category": "development",
+      "skills": ["rails-patterns"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-perl",
+      "description": "ECC Perl: modern Perl patterns, testing, and security",
+      "keywords": ["perl"],
+      "category": "development",
+      "skills": ["perl-patterns", "perl-testing", "perl-security"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-flutter",
+      "description": "ECC Flutter/Dart: patterns, code review, and build/pub dependency fixes",
+      "keywords": ["flutter", "dart", "mobile"],
+      "category": "development",
+      "skills": ["dart-flutter-patterns", "flutter-dart-code-review"],
+      "agents": ["flutter-reviewer", "dart-build-resolver"],
+      "commands": ["flutter-build", "flutter-review", "flutter-test"]
+    },
+    {
+      "name": "ecc-swift",
+      "description": "ECC Swift/Apple: SwiftUI, Swift 6.2 concurrency, actors, on-device Foundation Models, Liquid Glass, review, and build fixes",
+      "keywords": ["swift", "ios", "swiftui", "apple"],
+      "category": "development",
+      "skills": [
+        "foundation-models-on-device", "liquid-glass-design", "swift-actor-persistence", "swift-concurrency-6-2",
+        "swift-protocol-di-testing", "swiftui-patterns", "ios-icon-gen"
+      ],
+      "agents": ["swift-reviewer", "swift-build-resolver"],
+      "commands": []
+    },
+    {
+      "name": "ecc-harmonyos",
+      "description": "ECC HarmonyOS/OpenHarmony: ArkTS and ArkUI code and API review",
+      "keywords": ["harmonyos", "openharmony", "arkts"],
+      "category": "development",
+      "skills": [],
+      "agents": ["harmonyos-app-resolver"],
+      "commands": []
+    },
+    {
+      "name": "ecc-security",
+      "description": "ECC security: security review and scanning, bug bounty hunting, GateGuard, and safety guards",
+      "keywords": ["security", "owasp", "scanning"],
+      "category": "security",
+      "skills": ["security-review", "security-scan", "security-bounty-hunter", "gateguard", "safety-guard"],
+      "agents": ["security-reviewer"],
+      "commands": ["security-scan"]
+    },
+    {
+      "name": "ecc-healthcare",
+      "description": "ECC healthcare: PHI/HIPAA compliance, CDSS and EMR patterns, clinical eval harness, and healthcare review",
+      "keywords": ["healthcare", "hipaa", "phi", "emr"],
+      "category": "domain",
+      "skills": ["healthcare-phi-compliance", "hipaa-compliance", "healthcare-cdss-patterns", "healthcare-emr-patterns", "healthcare-eval-harness"],
+      "agents": ["healthcare-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-web3",
+      "description": "ECC Web3: DeFi/EVM security, token decimals, keccak256, x402 payments, trading-agent security, and prediction markets",
+      "keywords": ["web3", "defi", "evm", "prediction-markets"],
+      "category": "domain",
+      "skills": [
+        "defi-amm-security", "evm-token-decimals", "nodejs-keccak256", "llm-trading-agent-security", "agent-payment-x402",
+        "ito-baskets", "prediction-market-oracle-research", "prediction-market-risk-review"
+      ],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-ito",
+      "description": "ECC Ito compute: compute, inference, and training workflows",
+      "keywords": ["ito", "compute", "inference", "training"],
+      "category": "domain",
+      "skills": ["ito-compute", "ito-inference", "ito-training"],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-research",
+      "description": "ECC research: deep research, Exa search, docs lookup, PubMed/USPTO databases, and literature review",
+      "keywords": ["research", "search", "documentation"],
+      "category": "productivity",
+      "skills": [
+        "deep-research", "exa-search", "research-ops", "scientific-db-pubmed-database", "scientific-db-uspto-database",
+        "scientific-pkg-gget", "scientific-thinking-literature-review", "scientific-thinking-scholar-evaluation",
+        "documentation-lookup"
+      ],
+      "agents": ["docs-lookup"],
+      "commands": []
+    },
+    {
+      "name": "ecc-marketing",
+      "description": "ECC marketing and content: articles, brand voice, content engine, SEO, competitive analysis, campaigns, and social distribution",
+      "keywords": ["marketing", "content", "seo", "social"],
+      "category": "productivity",
+      "skills": [
+        "article-writing", "brand-voice", "content-engine", "seo", "brand-discovery", "competitive-platform-analysis",
+        "competitive-report-structure", "benchmark-methodology", "marketing-campaign", "market-research", "crosspost",
+        "x-api", "social-publisher"
+      ],
+      "agents": ["marketing-agent", "seo-specialist"],
+      "commands": ["marketing-campaign"]
+    },
+    {
+      "name": "ecc-business",
+      "description": "ECC business: investor materials and outreach, lead intelligence, product capability, operator desk patterns, and document processing",
+      "keywords": ["business", "investors", "product", "documents"],
+      "category": "productivity",
+      "skills": [
+        "investor-materials", "investor-outreach", "lead-intelligence", "product-capability", "social-graph-ranker",
+        "operator-approval-loop", "counterparty-channel-discipline", "master-agreement-generator", "esign-field-placement",
+        "nutrient-document-processing", "visa-doc-translate"
+      ],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-operator",
+      "description": "ECC operator workflows: GitHub, Jira, email, messaging, billing, Google Workspace, dashboards, and cost tracking",
+      "keywords": ["operations", "github", "jira", "email", "billing"],
+      "category": "productivity",
+      "skills": [
+        "automation-audit-ops", "api-connector-builder", "connections-optimizer", "cost-tracking", "customer-billing-ops",
+        "dashboard-builder", "ecc-tools-cost-audit", "email-ops", "finance-billing-ops", "github-ops",
+        "google-workspace-ops", "jira-integration", "knowledge-ops", "messages-ops", "project-flow-ops", "terminal-ops",
+        "unified-notifications-ops", "workspace-surface-audit", "mailtrap-email-integration"
+      ],
+      "agents": ["chief-of-staff"],
+      "commands": ["jira"]
+    },
+    {
+      "name": "ecc-media",
+      "description": "ECC media generation: fal.ai, Remotion, Manim, video editing, VideoDB, Blender, UI demos, and taste pipelines",
+      "keywords": ["media", "video", "image", "remotion"],
+      "category": "productivity",
+      "skills": [
+        "blender-motion-state-inspection", "fal-ai-media", "manim-video", "remotion-video-creation", "ui-demo",
+        "video-editing", "videodb", "taste", "tasteforge-video", "taste-distillation", "taste-application"
+      ],
+      "agents": [],
+      "commands": []
+    },
+    {
+      "name": "ecc-agentic",
+      "description": "ECC agentic engineering: harness construction, autonomous loops, GAN-style harness, prompt optimization, and agent ops",
+      "keywords": ["agents", "agentic", "autonomous-loops", "harness"],
+      "category": "workflow",
+      "skills": [
+        "agent-architecture-audit", "agent-harness-construction", "agentic-engineering", "agentic-os", "ai-first-engineering",
+        "autonomous-loops", "blueprint", "claude-devfleet", "content-hash-cache-pattern", "continuous-agent-loop",
+        "cost-aware-llm-pipeline", "data-scraper-agent", "dynamic-workflow-mode", "enterprise-agent-ops", "nanoclaw-repl",
+        "prompt-optimizer", "ralphinho-rfc-pipeline", "regex-vs-llm-structured-text", "search-first",
+        "team-agent-orchestration", "token-budget-advisor", "team-builder", "autonomous-agent-harness",
+        "gan-style-harness", "openclaw-persona-forge", "nasiko-control-plane"
+      ],
+      "agents": ["gan-planner", "gan-generator", "gan-evaluator"],
+      "commands": ["gan-build", "gan-design"]
+    },
+    {
+      "name": "ecc-orchestration",
+      "description": "ECC orchestration: orch-* feature pipelines, plan orchestration, dmux workflows, and multi-model commands",
+      "keywords": ["orchestration", "multi-agent", "pipeline"],
+      "category": "workflow",
+      "skills": [
+        "orch-add-feature", "orch-build-mvp", "orch-change-feature", "orch-fix-defect", "orch-pipeline", "orch-refine-code",
+        "plan-orchestrate", "dmux-workflows"
+      ],
+      "agents": [],
+      "commands": [
+        "orch-add-feature", "orch-build-mvp", "orch-change-feature", "orch-fix-defect", "orch-refine-code", "orch-review",
+        "multi-backend", "multi-execute", "multi-frontend", "multi-plan"
+      ]
+    },
+    {
+      "name": "ecc-opensource",
+      "description": "ECC open-source release pipeline: fork, sanitize, and package projects for public release",
+      "keywords": ["open-source", "release", "sanitize"],
+      "category": "workflow",
+      "skills": ["opensource-pipeline"],
+      "agents": ["opensource-forker", "opensource-sanitizer", "opensource-packager"],
+      "commands": []
+    },
+    {
+      "name": "ecc-devops",
+      "description": "ECC DevOps: deployment, Docker, Kubernetes, canary watch, Flox, uncloud, and PM2",
+      "keywords": ["devops", "docker", "kubernetes", "deployment"],
+      "category": "development",
+      "skills": ["deployment-patterns", "docker-patterns", "kubernetes-patterns", "canary-watch", "flox-environments", "uncloud", "terminal-opener"],
+      "agents": [],
+      "commands": ["pm2"]
+    },
+    {
+      "name": "ecc-network",
+      "description": "ECC networking: enterprise and homelab network design, Cisco IOS, BGP, VLANs, WireGuard, Pi-hole, and config review",
+      "keywords": ["network", "homelab", "cisco", "bgp"],
+      "category": "development",
+      "skills": [
+        "cisco-ios-patterns", "homelab-network-readiness", "homelab-network-setup", "netmiko-ssh-automation",
+        "network-bgp-diagnostics", "network-config-validation", "network-interface-health", "homelab-pihole-dns",
+        "homelab-vlan-segmentation", "homelab-wireguard-vpn"
+      ],
+      "agents": ["network-architect", "homelab-architect", "network-config-reviewer", "network-troubleshooter"],
+      "commands": []
+    },
+    {
+      "name": "ecc-ml",
+      "description": "ECC machine learning: production MLE workflow, PyTorch, recommender systems, RAG review, and ML adoption",
+      "keywords": ["machine-learning", "pytorch", "mle", "rag"],
+      "category": "development",
+      "skills": ["mle-workflow", "ml-adoption-playbook", "pytorch-patterns", "recsys-pipeline-architect"],
+      "agents": ["mle-reviewer", "pytorch-build-resolver", "rag-pipeline-reviewer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-performance",
+      "description": "ECC performance: benchmarking, throughput and latency optimization, parallel execution, and agent evals",
+      "keywords": ["performance", "benchmark", "latency", "optimization"],
+      "category": "development",
+      "skills": [
+        "benchmark-optimization-loop", "data-throughput-accelerator", "latency-critical-systems",
+        "parallel-execution-optimizer", "recursive-decision-ledger", "agent-eval", "benchmark"
+      ],
+      "agents": ["performance-optimizer"],
+      "commands": []
+    },
+    {
+      "name": "ecc-supply-chain",
+      "description": "ECC supply chain: logistics, customs, procurement, inventory planning, production scheduling, and returns",
+      "keywords": ["supply-chain", "logistics", "procurement"],
+      "category": "domain",
+      "skills": [
+        "carrier-relationship-management", "customs-trade-compliance", "energy-procurement", "inventory-demand-planning",
+        "logistics-exception-management", "production-scheduling", "quality-nonconformance", "returns-reverse-logistics"
+      ],
+      "agents": [],
+      "commands": []
+    }
+  ]
+}

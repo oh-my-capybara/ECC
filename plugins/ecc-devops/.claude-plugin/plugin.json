@@ -1,0 +1,24 @@
+{
+  "name": "ecc-devops",
+  "version": "2.2.3",
+  "description": "ECC DevOps: deployment, Docker, Kubernetes, canary watch, Flox, uncloud, and PM2",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "devops",
+    "docker",
+    "kubernetes",
+    "deployment"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}
