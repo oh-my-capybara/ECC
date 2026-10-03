@@ -1,0 +1,24 @@
+{
+  "name": "ecc-agentic",
+  "version": "2.2.3",
+  "description": "ECC agentic engineering: harness construction, autonomous loops, GAN-style harness, prompt optimization, and agent ops",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "agentic",
+    "autonomous-loops",
+    "harness"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

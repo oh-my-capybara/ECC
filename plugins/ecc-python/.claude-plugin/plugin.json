@@ -1,0 +1,22 @@
+{
+  "name": "ecc-python",
+  "version": "2.2.3",
+  "description": "ECC Python: idiomatic patterns, pytest testing, installers, and Python review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "python",
+    "pytest"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

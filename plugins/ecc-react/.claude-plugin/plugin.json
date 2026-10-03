@@ -1,0 +1,26 @@
+{
+  "name": "ecc-react",
+  "version": "2.2.3",
+  "description": "ECC React: React, Next.js, and React Native patterns, performance, testing, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "nextjs",
+    "react-native"
+  ],
+  "dependencies": [
+    "ecc-frontend"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

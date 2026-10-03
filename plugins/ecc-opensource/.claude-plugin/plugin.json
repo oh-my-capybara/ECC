@@ -1,0 +1,20 @@
+{
+  "name": "ecc-opensource",
+  "version": "2.2.3",
+  "description": "ECC open-source release pipeline: fork, sanitize, and package projects for public release",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "open-source",
+    "release",
+    "sanitize"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -88,26 +88,26 @@ This is a **production-ready AI coding plugin** providing 68 specialized agents,
 ## Agent Orchestration
 
 Use agents proactively without user prompt:
-- Complex feature requests → **ecc:planner**
-- Code just written/modified → **ecc:code-reviewer**
-- Bug fix or new feature → **ecc:tdd-guide**
-- Architectural decision → **ecc:architect**
-- Security-sensitive code → **ecc:security-reviewer**
-- Brownfield project onboarding → **ecc:spec-miner**
-- Autonomous loops / loop monitoring → **ecc:loop-operator**
+- Complex feature requests → **ecc-workflow:planner**
+- Code just written/modified → **ecc-workflow:code-reviewer**
+- Bug fix or new feature → **ecc-workflow:tdd-guide**
+- Architectural decision → **ecc-workflow:architect**
+- Security-sensitive code → **ecc-security:security-reviewer**
+- Brownfield project onboarding → **ecc-workflow:spec-miner**
+- Autonomous loops / loop monitoring → **ecc-workflow:loop-operator**
 - Harness config reliability and cost → **ecc:harness-optimizer**
-- RAG/retrieval pipeline changes → **ecc:rag-pipeline-reviewer**
-- Performance bottleneck or slow code → **ecc:performance-optimizer**
-- React/JSX changes → **ecc:react-reviewer**
-- Vue changes → **ecc:vue-reviewer**
-- Swift changes → **ecc:swift-reviewer**
-- C# changes → **ecc:csharp-reviewer**
-- PHP changes → **ecc:php-reviewer**
-- Flutter/Dart changes → **ecc:flutter-reviewer**
-- Healthcare/clinical code → **ecc:healthcare-reviewer**
-- UI component design → **ecc:a11y-architect**
-- Open-source release prep → **ecc:opensource-forker** → **ecc:opensource-sanitizer** → **ecc:opensource-packager**
-- Agent output quality check → **ecc:agent-evaluator**
+- RAG/retrieval pipeline changes → **ecc-ml:rag-pipeline-reviewer**
+- Performance bottleneck or slow code → **ecc-performance:performance-optimizer**
+- React/JSX changes → **ecc-react:react-reviewer**
+- Vue changes → **ecc-vue:vue-reviewer**
+- Swift changes → **ecc-swift:swift-reviewer**
+- C# changes → **ecc-dotnet:csharp-reviewer**
+- PHP changes → **ecc-php:php-reviewer**
+- Flutter/Dart changes → **ecc-flutter:flutter-reviewer**
+- Healthcare/clinical code → **ecc-healthcare:healthcare-reviewer**
+- UI component design → **ecc-frontend:a11y-architect**
+- Open-source release prep → **ecc-opensource:opensource-forker** → **ecc-opensource:opensource-sanitizer** → **ecc-opensource:opensource-packager**
+- Agent output quality check → **ecc-workflow:agent-evaluator**
 
 Use parallel execution for independent operations — launch multiple agents simultaneously.
 
@@ -161,9 +161,9 @@ Troubleshoot failures: check test isolation → verify mocks → fix implementat
 
 ## Development Workflow
 
-1. **Plan** — Use ecc:planner agent, identify dependencies and risks, break into phases
-2. **TDD** — Use ecc:tdd-guide agent, write tests first, implement, refactor
-3. **Review** — Use ecc:code-reviewer agent immediately, address CRITICAL/HIGH issues
+1. **Plan** — Use ecc-workflow:planner agent, identify dependencies and risks, break into phases
+2. **TDD** — Use ecc-workflow:tdd-guide agent, write tests first, implement, refactor
+3. **Review** — Use ecc-workflow:code-reviewer agent immediately, address CRITICAL/HIGH issues
 4. **Capture knowledge in the right place**
    - Personal debugging notes, preferences, and temporary context → auto memory
    - Team/project knowledge (architecture decisions, API changes, runbooks) → the project's existing docs structure

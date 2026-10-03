@@ -1,0 +1,21 @@
+{
+  "name": "ecc-performance",
+  "version": "2.2.3",
+  "description": "ECC performance: benchmarking, throughput and latency optimization, parallel execution, and agent evals",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "performance",
+    "benchmark",
+    "latency",
+    "optimization"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ecc-ml",
+  "version": "2.2.3",
+  "description": "ECC machine learning: production MLE workflow, PyTorch, recommender systems, RAG review, and ML adoption",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "machine-learning",
+    "pytorch",
+    "mle",
+    "rag"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

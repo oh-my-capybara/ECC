@@ -6,32 +6,32 @@ ECC agents ship with the `ecc@ecc` plugin, not in `~/.claude/agents/`.
 They are invoked through the Agent tool with a plugin-scoped `subagent_type`:
 
 ```text
-Agent(subagent_type: "ecc:planner", prompt: "...")
+Agent(subagent_type: "ecc-workflow:planner", prompt: "...")
 ```
 
 | Agent | Purpose | When to Use |
 |-------|---------|-------------|
-| ecc:planner | Implementation planning | Complex features, refactoring |
-| ecc:architect | System design | Architectural decisions |
-| ecc:tdd-guide | Test-driven development | New features, bug fixes |
-| ecc:code-reviewer | Code review | After writing code |
-| ecc:security-reviewer | Security analysis | Before commits |
-| ecc:build-error-resolver | Fix build errors | When build fails |
-| ecc:e2e-runner | E2E testing | Critical user flows |
-| ecc:refactor-cleaner | Dead code cleanup | Code maintenance |
-| ecc:doc-updater | Documentation | Updating docs |
-| ecc:rust-reviewer | Rust code review | Rust projects |
-| ecc:harmonyos-app-resolver | HarmonyOS app development | HarmonyOS/ArkTS projects |
+| ecc-workflow:planner | Implementation planning | Complex features, refactoring |
+| ecc-workflow:architect | System design | Architectural decisions |
+| ecc-workflow:tdd-guide | Test-driven development | New features, bug fixes |
+| ecc-workflow:code-reviewer | Code review | After writing code |
+| ecc-security:security-reviewer | Security analysis | Before commits |
+| ecc-workflow:build-error-resolver | Fix build errors | When build fails |
+| ecc-qa:e2e-runner | E2E testing | Critical user flows |
+| ecc-workflow:refactor-cleaner | Dead code cleanup | Code maintenance |
+| ecc-workflow:doc-updater | Documentation | Updating docs |
+| ecc-rust:rust-reviewer | Rust code review | Rust projects |
+| ecc-harmonyos:harmonyos-app-resolver | HarmonyOS app development | HarmonyOS/ArkTS projects |
 
 For the full roster of 68 agents, see `/ecc:ecc-guide`.
 
 ## Immediate Agent Usage
 
 No user prompt needed:
-1. Complex feature requests - Use **ecc:planner** agent
-2. Code just written/modified - Use **ecc:code-reviewer** agent
-3. Bug fix or new feature - Use **ecc:tdd-guide** agent
-4. Architectural decision - Use **ecc:architect** agent
+1. Complex feature requests - Use **ecc-workflow:planner** agent
+2. Code just written/modified - Use **ecc-workflow:code-reviewer** agent
+3. Bug fix or new feature - Use **ecc-workflow:tdd-guide** agent
+4. Architectural decision - Use **ecc-workflow:architect** agent
 
 ## Parallel Task Execution
 

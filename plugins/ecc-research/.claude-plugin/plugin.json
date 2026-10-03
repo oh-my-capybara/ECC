@@ -1,0 +1,20 @@
+{
+  "name": "ecc-research",
+  "version": "2.2.3",
+  "description": "ECC research: deep research, Exa search, docs lookup, PubMed/USPTO databases, and literature review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "search",
+    "documentation"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}
