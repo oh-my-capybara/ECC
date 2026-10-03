@@ -6,7 +6,9 @@ const os = require('node:os');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { test } = require('node:test');
-const script = path.resolve(__dirname, '../../skills/frontend-design-direction/scripts/check-evidence.js');
+const rootScript = path.resolve(__dirname, '../../skills/frontend-design-direction/scripts/check-evidence.js');
+const pluginScript = path.resolve(__dirname, '../../plugins/ecc-frontend/skills/frontend-design-direction/scripts/check-evidence.js');
+const script = fs.existsSync(pluginScript) ? pluginScript : rootScript;
 const { checkEvidence } = require(script);
 
 function report() {

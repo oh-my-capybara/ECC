@@ -1,0 +1,19 @@
+{
+  "name": "ecc-laravel",
+  "version": "2.2.3",
+  "description": "ECC Laravel: patterns, TDD, verification, security, and plugin discovery",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "laravel"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

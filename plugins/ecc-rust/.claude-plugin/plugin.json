@@ -1,0 +1,22 @@
+{
+  "name": "ecc-rust",
+  "version": "2.2.3",
+  "description": "ECC Rust: idiomatic patterns, testing, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "rust",
+    "cargo"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}
