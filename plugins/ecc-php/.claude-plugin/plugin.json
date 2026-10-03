@@ -1,0 +1,15 @@
+{
+  "name": "ecc-php",
+  "version": "2.2.3",
+  "description": "ECC PHP: PSR-12, Eloquent, and security code review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "php"
+  ]
+}

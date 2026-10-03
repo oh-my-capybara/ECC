@@ -1,0 +1,21 @@
+{
+  "name": "ecc-business",
+  "version": "2.2.3",
+  "description": "ECC business: investor materials and outreach, lead intelligence, product capability, operator desk patterns, and document processing",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "business",
+    "investors",
+    "product",
+    "documents"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

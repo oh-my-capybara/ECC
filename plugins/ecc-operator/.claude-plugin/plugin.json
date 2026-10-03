@@ -1,0 +1,25 @@
+{
+  "name": "ecc-operator",
+  "version": "2.2.3",
+  "description": "ECC operator workflows: GitHub, Jira, email, messaging, billing, Google Workspace, dashboards, and cost tracking",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "operations",
+    "github",
+    "jira",
+    "email",
+    "billing"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

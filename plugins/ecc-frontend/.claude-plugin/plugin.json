@@ -1,0 +1,22 @@
+{
+  "name": "ecc-frontend",
+  "version": "2.2.3",
+  "description": "ECC frontend foundations: UI patterns, design systems, accessibility, motion, i18n, Angular, and Vite",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "frontend",
+    "ui",
+    "accessibility",
+    "design-system",
+    "motion"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ecc-marketing",
+  "version": "2.2.3",
+  "description": "ECC marketing and content: articles, brand voice, content engine, SEO, competitive analysis, campaigns, and social distribution",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "content",
+    "seo",
+    "social"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

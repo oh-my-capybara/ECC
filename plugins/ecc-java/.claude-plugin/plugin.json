@@ -1,0 +1,25 @@
+{
+  "name": "ecc-java",
+  "version": "2.2.3",
+  "description": "ECC Java: coding standards, Spring Boot, Quarkus, JPA, tinystruct, review, and Maven/Gradle build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "java",
+    "spring-boot",
+    "quarkus",
+    "jpa",
+    "gradle"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ecc-qa",
+  "version": "2.2.3",
+  "description": "ECC QA and testing: Playwright E2E, browser QA, click-path audits, desktop E2E, and AI regression testing",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "e2e",
+    "playwright",
+    "qa"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}
