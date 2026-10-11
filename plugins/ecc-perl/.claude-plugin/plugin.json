@@ -1,0 +1,18 @@
+{
+  "name": "ecc-perl",
+  "version": "2.2.3",
+  "description": "ECC Perl: modern Perl patterns, testing, and security",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "perl"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

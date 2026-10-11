@@ -1,0 +1,21 @@
+{
+  "name": "ecc-media",
+  "version": "2.2.3",
+  "description": "ECC media generation: fal.ai, Remotion, Manim, video editing, VideoDB, Blender, UI demos, and taste pipelines",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "media",
+    "video",
+    "image",
+    "remotion"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

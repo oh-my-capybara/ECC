@@ -1,0 +1,21 @@
+{
+  "name": "ecc-swift",
+  "version": "2.2.3",
+  "description": "ECC Swift/Apple: SwiftUI, Swift 6.2 concurrency, actors, on-device Foundation Models, Liquid Glass, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "swift",
+    "ios",
+    "swiftui",
+    "apple"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

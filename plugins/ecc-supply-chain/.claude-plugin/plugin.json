@@ -1,0 +1,20 @@
+{
+  "name": "ecc-supply-chain",
+  "version": "2.2.3",
+  "description": "ECC supply chain: logistics, customs, procurement, inventory planning, production scheduling, and returns",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "supply-chain",
+    "logistics",
+    "procurement"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

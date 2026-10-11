@@ -1,0 +1,21 @@
+{
+  "name": "ecc-web3",
+  "version": "2.2.3",
+  "description": "ECC Web3: DeFi/EVM security, token decimals, keccak256, x402 payments, trading-agent security, and prediction markets",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "web3",
+    "defi",
+    "evm",
+    "prediction-markets"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}
