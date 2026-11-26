@@ -1,0 +1,21 @@
+{
+  "name": "ecc-healthcare",
+  "version": "2.2.3",
+  "description": "ECC healthcare: PHI/HIPAA compliance, CDSS and EMR patterns, clinical eval harness, and healthcare review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "healthcare",
+    "hipaa",
+    "phi",
+    "emr"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,3 +1,17 @@
+### Split Plugins
+
+The marketplace ships the root `ecc` plugin plus smaller `ecc-*` plugins under `plugins/` (for example `ecc-workflow`, `ecc-react`, `ecc-django`). The root `ecc` plugin keeps hooks, scripts, rules, and the components that hooks/scripts reference by path, and lists every `ecc-*` plugin in `dependencies`. So `claude plugin install ecc@ecc` still installs the full bundle, while `claude plugin install ecc-react@ecc` installs only that slice (plus its own dependencies).
+
+The mapping lives in `manifests/claude-plugin-split.json`. To re-categorize, edit it and run:
+
+```bash
+npm run plugins:split:dry-run   # preview moves
+npm run plugins:split           # move files, regenerate manifests, rewrite ecc:<name> refs
+npm run plugins:restore         # move everything back into the root plugin
+```
+
+Sub-plugin components are namespaced by their plugin, e.g. `ecc-workflow:planner` instead of `ecc:planner`.
+
 ### Plugin Manifest Gotchas
 
 If you plan to edit `.claude-plugin/plugin.json`, be aware that the Claude plugin validator enforces several **undocumented but strict constraints** that can cause installs to fail with vague errors (for example, `agents: Invalid input`). In particular, component fields must be arrays, `agents` is not a supported manifest field and must not be included in plugin.json, and a `version` field is required for reliable validation and installation.

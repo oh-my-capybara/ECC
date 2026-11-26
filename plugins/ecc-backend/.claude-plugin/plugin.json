@@ -1,0 +1,21 @@
+{
+  "name": "ecc-backend",
+  "version": "2.2.3",
+  "description": "ECC backend architecture: REST API design, backend patterns, contract-first, hexagonal architecture, and MCP servers",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "backend",
+    "api",
+    "architecture",
+    "mcp"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ecc-database",
+  "version": "2.2.3",
+  "description": "ECC databases: PostgreSQL, MySQL, ClickHouse, Redis, Prisma, migrations, and database review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "database",
+    "postgres",
+    "mysql",
+    "redis",
+    "prisma"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

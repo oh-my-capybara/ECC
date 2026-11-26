@@ -1,0 +1,20 @@
+{
+  "name": "ecc-godot",
+  "version": "2.2.3",
+  "description": "ECC Godot 4: GDScript patterns, testing, and code review",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "godot",
+    "gdscript",
+    "gamedev"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

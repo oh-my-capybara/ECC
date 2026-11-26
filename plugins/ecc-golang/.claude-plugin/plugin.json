@@ -1,0 +1,22 @@
+{
+  "name": "ecc-golang",
+  "version": "2.2.3",
+  "description": "ECC Go: idiomatic patterns, testing, review, and build fixes",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://x.com/affaanmustafa"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "golang"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ]
+}
